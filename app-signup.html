@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Application Signup</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a href="app-index.html" class="navbar-brand">Home</a>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item p-3">
+            <a href="app-signup.html" class="nav-link active">Signup</a>
+          </li>
+          <li class="nav-item p-3">
+            <a href="app-login.html" class="nav-link">Login</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container mt-3">
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <form action="includes/app-signup.inc.php" method="post">
+            <fieldset>
+              <legend class="mb-5">Application Signup</legend>
+
+              <div class="mb-3">
+                <label class="form-label" for="u_firstname">First Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="u_firstname"
+                  name="u_firstname"
+                />
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label" for="u_lastname">Last Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="u_lastname"
+                  name="u_lastname"
+                />
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label" for="u_email">EMail</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="u_email"
+                  name="u_email"
+                />
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label" for="u_username">User name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="u_username"
+                  name="u_username"
+                />
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label" for="u_password">Password</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="u_password"
+                  name="u_password"
+                />
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label" for="u_repeat_password"
+                  >Repeat Password</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  id="u_repeat_password"
+                  name="u_repeat_password"
+                />
+              </div>
+
+              <button class="btn btn-success" name="signup" type="submit">
+                Signup
+              </button>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
